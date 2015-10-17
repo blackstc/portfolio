@@ -180,6 +180,54 @@ hr.small {
     margin-bottom: 30px;
 }
 
+.facebook {
+  background: url("../img/facebook.png");
+  width: 100px;
+  height: 100px;
+}
+
+.facebook:hover {
+  background: url("../img/facebook-hover.png");
+  width: 100px;
+  height: 100px;
+}
+
+.twitter {
+  background: url("../img/twitter.png");
+  width: 100px;
+  height: 100px;
+}
+
+.twitter:hover {
+  background: url("../img/twitter-hover.png");
+  width: 100px;
+  height: 100px;
+}
+
+.linkedin {
+  background: url("../img/linkedin.png");
+  width: 100px;
+  height: 100px;
+}
+
+.linkedin:hover {
+  background: url("../img/linkedin-hover.png");
+  width: 100px;
+  height: 100px;
+}
+
+.github {
+  background: url("../img/github.png");
+  width: 100px;
+  height: 100px;
+}
+
+.github:hover {
+  background: url("../img/github-hover.png");
+  width: 100px;
+  height: 100px;
+}
+
 /* Callout */
 
 .callout {
