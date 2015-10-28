@@ -246,14 +246,36 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+    margin: 0 auto;
 }
 
 .portfolio-item {
+    margin: 0 auto;
     margin-bottom: 30px;
+    min-height: 300px;
+    min-width: 400px;
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    -webkit-perspective: 1000px;
 }
+
+/*.portfolio-item .primary,
+.portfolio-item .secondary {
+	display: block;
+	width: 400px;
+	height: 200px;
+	background: #CCC;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+}*/
 
 .img-portfolio {
     margin: 0 auto;
+    min-width: 400px;
+    min-height: 300px;
 }
 
 .img-portfolio:hover {
