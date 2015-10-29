@@ -252,25 +252,20 @@ hr.small {
 .portfolio-item {
     margin: 0 auto;
     margin-bottom: 30px;
-    min-height: 300px;
-    min-width: 400px;
     height: 300px;
     width: 400px;
     overflow: hidden;
-    -webkit-perspective: 1000px;
+    -webkit-perspective: 10000px;
 }
 
-/*.portfolio-item .primary,
+.portfolio-item .primary,
 .portfolio-item .secondary {
 	display: block;
-	width: 400px;
-	height: 200px;
-	background: #CCC;
+	background: white;
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
-	border-radius: 10px;
 	overflow: hidden;
-}*/
+}
 
 .img-portfolio {
     margin: 0 auto;
@@ -278,10 +273,40 @@ hr.small {
     min-height: 300px;
 }
 
-.img-portfolio:hover {
-    opacity: 0.8;
+.secondary {
+	padding: 20px;
+	width: 400px;
+	height: 300px;
+  color: black;
 }
 
+.primary {
+  position: absolute;
+  z-index: 1;
+}
+
+.primary,
+.secondary{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+
+.secondary {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.portfolio-item:hover .primary{
+  -webkit-transform: rotateY(-180deg);
+  transfrom: rotateY(-180deg);
+}
+
+.portfolio-item:hover .secondary{
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
 /* Call to Action */
 
 .call-to-action {
