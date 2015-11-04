@@ -334,3 +334,9 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+/*Contact*/
+#contact img {
+  height: 200px;
+  width: 200px;
+}
